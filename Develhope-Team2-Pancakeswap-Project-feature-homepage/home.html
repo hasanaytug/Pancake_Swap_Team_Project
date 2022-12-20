@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="icon" type="image/x-icom" href="https://www.pngall.com/wp-content/uploads/10/PancakeSwap-Crypto-Logo-PNG.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>Home | PancakeSwap - $4.047</title>
+  </head>
+  <body>
+    <section id="phishing-warning">
+      <img id="phishing-bunny" src="./assets/images/phishing-warning/phishing-warning-bunny.webp" 
+        alt="Phishing warning bunny.">
+      <div>
+        <span>PHISHING WARNING:</span>
+        <p>please make sure you're visiting</p>
+        <span id="url">https://pancakeswap.finance</span>
+        <p> - check the URL carefully.</p>
+      </div>
+      <button>
+        <img src="./assets/icons/phishing-warning.svg" 
+          alt="Phishing warning close icon.">
+      </button>
+    </section>
+    <nav class="navbar">
+      <section class="nav-left">
+        <ul> 
+          <li class="logo"><a href="#"><img src="./Full Logo/color-black.svg" alt=""></a></li>
+          <div class="item-wrapper">
+            <li class="item trade">
+              <a href="#">Trade</a>
+              <div class="submenu1">
+                <ul>
+                  <li><a href="../Develhope-Team2-Pancakeswap-Project-feature-swap/swap.html">Swap</a></li>
+                  <li><a href="#">Limit</a></li>
+                  <li><a href="../Develhope-Team2-Pancakeswap-Project-feature-liquidity/liquidity.html">Liquidity</a></li>
+                  <li><a href="#">Perpetual</a></li>
+                  <li><a href="#">Bridge</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+          <div class="item-wrapper">
+            <li class="item ern"><a href="#">Earn</a>
+              <div class="submenu1 subm2">
+                <ul>
+                  <li><a href="#">Farms</li></a>
+                  <li><a href="#">Pools</li></a>
+                </ul>
+              </div>
+            </li>
+          </div>
+          <div class="item-wrapper">
+            <li class="item win">
+              <a href="#">Win <div class="nav-green-circle"></div></a>
+                <div class="submenu1 subm3">
+                  <ul class="trading group">
+                    <li><a href="#">Trading Competition</a></li>
+                    <li><a href="#">Prediction (BETA)</a></li>
+                    <li><a href="#">Lottery</a></li>
+                    <li><a href="#">Pottery (BETA)</a><div id="nav-submenu-msg">POT OPEN</div></li>
+                  </ul>
+                </div>
+            </li>
+          </div>
+          <div class="item-wrapper">
+            <li class="item nft"><a href="#">NFT</a>
+              <div class="submenu1 subm4">
+                <ul>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Collections</a></li>
+                  <li><a href="#">Activity</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+          
+          <div class="dots-item-wrapper">
+            <li class="item dots">
+              <a href="#">
+                <img src="./assets/icons/dots.svg" alt="More icon.">
+                <div class="nav-green-circle"></div>
+              
+              </a>
+              <div class="submenu5 subm5">
+                <ul>
+                  <li>
+                    <a href="#">Info</a>
+                  </li>
+                  <li>
+                    <a href="#">IFO</a>
+                  </li>
+                  <li>
+                    <a href="#">Voting</a>
+                    <div id="nav-submenu-msg">VOTE NOW</div>
+                  </li>
+                  <li>
+                    <a href="#">Leaderboard</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                    <img src="./assets/icons/submenu-link.svg" alt="Link.">
+                  </li>
+                  <li>
+                    <a href="#">Docs</a>
+                    <img src="./assets/icons/submenu-link.svg" alt="Link.">
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+    <div class="nav-right">
+      <ul>
+        <li class="fee">
+          <img src="./assets/icons/feesvg.svg" alt="">
+          <a href="#">
+            <span class="dollars">$4.523</span>
+          </a>
+        </li>
+        <li class="lang-select">
+          <a href="#">
+            <svg class="top-right-icons" viewBox="0 0 24 24" color="textSubtle" width="24px" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 
+                8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 
+                8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 
+                11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 
+                5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 
+                16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 
+                10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 
+                16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 
+                10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z">
+              </path>
+            </svg>
+          </a>
+          <div class="sublanguage">
+            <ul>
+              <li class="lang">العربية</li>
+              <li class="lang">বাংলা</li>
+              <li class="lang">English</li>
+              <li class="lang">Deutsch</li>
+              <li class="lang">Ελληνικά</li>
+              <li class="lang">Español</li>
+              <li class="lang">Suomalainen</li>
+              <li class="lang">Filipino</li>
+              <li class="lang">Français</li>
+              <li class="lang">हिंदी</li>
+              <li class="lang">Magyar</li>
+              <li class="lang">Bahasa Indonesia</li>
+              <li class="lang">Italiano</li>
+              <li class="lang">日本語</li>
+              <li class="lang">한국어</li>
+              <li class="lang">Nederlands</li>
+              <li class="lang">Polski</li>
+              <li class="lang">Português (Brazil)</li>
+              <li class="lang">Português</li>
+              <li class="lang">Română</li>
+              <li class="lang">Русский</li>
+              <li class="lang">Svenska</li>
+              <li class="lang">தமிழ்</li>
+              <li class="lang">Türkçe</li>
+              <li class="lang">Українська</li>
+              <li class="lang">Tiếng Việt</li>
+              <li class="lang">简体中文</li>
+              <li class="lang">繁體中文1111</li>
+            </ul>
+          </div>
+        </li>
+        <li class="some2">
+          <a href="#">
+            <!--
+              <img class="navbar-right-img" src="./assets/icons/ebmyp.svg" alt="">
+            -->
+            <svg class="top-right-icons" viewBox="0 0 24 24" height="24" width="24" color="textSubtle" 
+              xmlns="http://www.w3.org/2000/svg" class="sc-4ba21b47-0 ebMyYP">
+              <path d="M19.43 12.98C19.47 12.66 19.5 12.34 19.5 
+                12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 
+                19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 
+                2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 
+                5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 
+                12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 
+                4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 
+                9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 
+                18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 
+                15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 
+                15.5Z">
+              </path>
+          </svg>
+          </a>
+        </li>
+        <li id="select-network-wrapper">
+          <div id="select-network">
+            <img id="selection-icon" src="./assets/images/navbar-images/bnb.png" alt="">
+            <p>
+              BNB Smart Chain
+            </p> 
+            <!--
+              <img id="network-down-arrow" src="./assets/icons/network-down-arrow.svg" alt="">
+            -->
+            <svg id="network-down-arrow" viewBox="0 0 24 24" color="text" width="24px" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 
+                17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 
+                6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+              </path>
+            </svg>
+            <ul id="network-selection"> 
+              <li>
+                <a href="#">
+                  Select a Network
+                </a>
+              </li>
+              <li>
+                <img src="./assets/images/navbar-images/bnb.png" alt="">
+                <a href="#" class="navbar-network-selected">
+                  BNB Smart Chain
+                </a>
+              </li>
+              <li>
+                <img src="./assets/images/navbar-images/etherium.png" alt="">
+                <a href="#">
+                  Ethereum
+                </a>
+              </li>
+              <li>
+                <img src="./assets/images/navbar-images/aptos.png" alt="">
+                <a href="#">
+                  Aptos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="connect">
+          <button>Connect Wallet</button>
+        </li>
+      </ul>
+  </div>
+    </nav>
+    <!-- Header Section Start -->
+    <div class="ibrahim-full-background">
+      <div class="headMiddleBackgroundColor">
+        <!-- Head -->
+        <div class="ibrahim-head">
+          <!-- Head of Header -->
+          <div class="ibrahim-rectangle">
+            <img class="header-head-el" src="assets/images/header-images/AptosXPancakeSwap.webp" height="20px" width="220px">
+            <h1 class="header-head-el" id="header-win-lottery">Win 62,729 in Lottery</h1>
+            <h1 class="header-head-el">Perpetual Futures</h1>
+            <div id="headTag" class="ibrahim-head-margin">
+              <h1>Hello Aptos Project Teams!</h1>
+              <div id="header-counter">
+                <span id="header-counter-days">
+                  1<sub>d</sub>
+                </span>
+                <span id="header-counter-hours">
+                  8<sub>h</sub>
+                </span>
+                <span id="header-counter-minutes">
+                  16<sub>m</sub>
+                </span>
+                <span>
+                  14<sub>s</sub>
+                </span>
+              </div>
+              <h1>UP TO 100x LEVERAGE</h1>
+            </div>
+            <!-- invertedContrast -->
+            <div class="ibrahim-head-margin">
+              <button class="ibrahim-button" >
+                <span>
+                  <b>👋 Get in Touch </b>
+                  <img src="./assets/icons/header-open-in-new.svg" alt="open in new tab.">
+                </span>
+                <span>
+                  <b>Play Now</b>
+                  <img src="./assets/icons/header-btn-right-arrow.svg" alt="Right arrow.">
+                </span>
+                <span>
+                  <b>Trade Now</b>
+                  <img src="./assets/icons/header-btn-right-arrow.svg" alt="Right arrow.">
+                </span>
+              </button>
+            </div>
+            <img class="header-box-imgs" id="header-aptos-img" src="./assets/images/header-images/Aptos.webp" alt="Aptos image.">
+            <img class="header-box-imgs" id="header-lottery-img" src="./assets/images/header-images/lottery.webp" alt="Lottery image.">
+            <img class="header-box-imgs" id="header-perpetual-img" src="./assets/images/header-images/perpetual.webp" alt="Perpetual image.">
+            <div id="header-swipper-container">
+              <div id="header-bullet-active" class="header-swipper"></div>
+              <div class="header-swipper"></div>
+              <div class="header-swipper"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Middle -->
+        <div class="ibrahim-middle">
+          <div class="ibrahim-middle-left">
+            <h1 class="header-middle-tag" id="middleH1Tag">The moon is made of pancakes.</h1> 
+            <h6 class="ibrahim-margin header-middle-tag" id="middleH6Tag">Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.</h6>
+            <div class="ibrahim-margin">
+                <button class="header-middle-button" id="buttonRightMargin"><b>Connect Wallet</b></button> <!-- Box Shadow here later on! -->
+                <button class="header-middle-button" id="buttonSecondMiddle"><b>Trade Now</b></button>
+            </div>
+          </div>
+          <div class="ibrahim-middle-right">
+            <div id="header-spaceman-container">
+              <img id="header-star-l" class="header-star" src="./assets/images/header-images/star-l@2x.webp" alt="Blinking star left.">
+              <img id="header-star-r" class="header-star" src="./assets/images/header-images/star-r@2x.webp" alt="Blinking star right.">
+              <img id="header-star-top" class="header-star" src="./assets/images/header-images/star-top-r@2x.webp" alt="Blinking star top.">
+              <img id="header-spaceman" src="assets/images/header-images/spaceman.png" alt="spaceman.">
+              <!--
+              -->
+            </div>
+          </div>
+        </div>
+        <div id="header-curved-container">
+          <img id="header-middle-border" src="./assets/icons/header-middle-border.svg" alt="Curved border.">
+        </div>
+      </div>
+      <!-- Foot -->
+      <div class="ibrahim-foot">
+        <!-- Foot of Header -->
+        <div class="alignmentVerHor">
+          <img id="ps-logo-icon" src="./assets/icons/ps-logo-icon.svg" alt="">
+        </div>
+
+        <div class="alignmentVerHor millionBillion">Used by millions.</div>
+        <div class="alignmentVerHor millionBillion">Trusted with billions.</div>
+        <div class="footTexts">
+          <h3 class="alignmentVerHor">PancakeSwap has the most users of any decentralized platform, ever.</h3> 
+          <h3 class="alignmentVerHor">And those users are now entrusting the platform with over $3.5 billion in funds.</h3></div>
+        <div id="joinText" class="alignmentVerHor">Will you join them?</div>
+        <div  class="header-boxes-flex">
+          <div class="square">
+            <div class="icon">
+              <span class="people-icon">
+                groups
+              </span>
+            </div>
+            <div class="boxBottoms">
+              <div class="number">2 million</div>
+              <div id="usersCategory" class="category">users</div>
+              <div class="time">in the last 30 days</div>
+            </div>
+          </div>
+          <div class="square">
+            <div class="icon">
+              <span class="trade-icon">
+                published_with_changes
+              </span>
+            </div>
+            <div class="boxBottoms">
+              <div class="number">55 million</div>
+              <div id="tradesCategory" class="category">trades</div>
+              <div class="time">made in the last 30 days</div>
+            </div>
+          </div>
+          <div class="square">
+            <div class="icon">
+              <span class="level-icon">
+                assessment
+              </span>
+            </div>
+            <div class="boxBottoms">
+              <div class="number">$3.5 billion</div>
+              <div id="stakedCategory" class="category">staked</div>
+              <div class="time">Total Value Locked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#d7caec" fill-opacity="1" d="M0,64L1440,96L1440,0L0,0Z"></path>
+      </svg>
+    </div>
+    <!-- Header Section End -->
+      <div class="cards" id="cards-1">
+        <div class="cards-text">
+          <h2 class="cards-h2"> <span class="blue-text">Trade</span> anything. No registration, no hassle.</h2>
+          <p>Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.</p>
+          <div class="cards-links">
+            <button class="trade">Trade Now</button>
+            <a class="learn-link" href="#">Learn</a>
+          </div>
+        </div>
+        <div id="cards-images" class="cards-image-right cards-images-1">
+          <div class="img-1">
+            <img id="cards-img-1" src="./assets/images/cards-images/BNB@2x.webp" alt="BNB">
+          </div>
+          <div class="img-2">
+            <img id="cards-img-2" src="./assets/images/cards-images/BTC@2x.webp" alt="BTC">
+          </div>
+          <div class="img-3">
+            <img id="cards-img-3" src="./assets/images/cards-images/CAKE@2x.webp" alt="cake">
+          </div>
+        </div>
+      </div>
+      <div id="cards-curve-1-container">
+        <svg viewBox="0 0 1660 48" preserveAspectRatio="none" color="text" width="20px" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z">
+          </path>
+        </svg>
+      </div>
+      
+      <div id="cards-2" class="cards">
+        <div id="cards-images" class="cards-image-right cards-images-2">
+          <div class="img-1">
+            <img id="cards-img-4" src="./assets/images/cards-images/stonks@2x.webp" alt="stonks">
+          </div>
+          <div class="img-2">
+            <img id="cards-img-5" src="./assets/images/cards-images/pie@2x.webp" alt="pie">
+          </div>
+          <div class="img-3">
+            <img id="cards-img-6" src="./assets/images/cards-images/folder@2x.webp" alt="folder">
+          </div>
+        </div>
+        <div class="cards-text">
+          <h2 class="cards-h2"> <span class="blue-text">Earn</span> passive income with crypto.</h2>
+          <p>PancakeSwap makes it easy to make your crypto work for you.</p>
+          <div class="cards-links">
+            <button class="trade">Explore</button>
+            <a class="learn-link" href="#">Learn</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- INFOS 1 -->
+      <section id="infos-1">
+        <div>
+          <div id="infos-1-title-container">
+            <h2>Top 
+            <span id="category">Farms</span>
+          </h2>
+          <button id="up-down-button">
+              <svg id="up-down-arrow" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 17.01V11C16 10.45 15.55 10 15 10C14.45 10 14 10.45 14 11V17.01H12.21C11.76 
+                17.01 11.54 17.55 11.86 17.86L14.65 20.64C14.85 20.83 15.16 20.83 
+                15.36 20.64L18.15 17.86C18.47 17.55 18.24 17.01 17.8 17.01H16ZM8.65003 
+                3.35002L5.86003 6.14002C5.54003 6.45002 5.76003 6.99002 6.21003 
+                6.99002H8.00003V13C8.00003 13.55 8.45003 14 9.00003 14C9.55003 14 10 13.55 10 
+                13V6.99002H11.79C12.24 6.99002 12.46 6.45002 12.14 6.14002L9.35003 
+                3.35002C9.16003 3.16002 8.84003 3.16002 8.65003 3.35002Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="trade-data-container">
+          <div class="data-box">
+            <h3>MHUNT-BNB LP</h3>
+            <span id="percentage">321.269%</span>
+            <p>APR</p>
+          </div>
+          
+          <div class="data-box">
+            <h3>KRS-BUSD LP</h3>
+            <span id="percentage">220.422%</span>
+            <p>APR</p>
+          </div>
+
+          <div class="data-box">
+            <h3>CO-BUSD LP</h3>
+            <span id="percentage">175.543%</span>
+            <p>APR</p>
+          </div>
+          
+          <div class="data-box">
+            <h3>HOOP-BUSD LP</h3>
+            <span id="percentage">169.051%</span>
+            <p>APR</p>
+          </div>
+          
+          <div class="data-box">
+            <h3>WMX-BUSD LP</h3>
+            <span id="percentage">133.768%</span>
+            <p>APR</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFOS 2 -->
+    <section id="infos-2">
+      <img id="lott-ball-1" class="lott-balls" src="./assets/images/lottery-balls/2@2x.webp" alt="Lottery ball.">
+      <img id="lott-ball-2" class="lott-balls" src="./assets/images/lottery-balls/7@2x.webp" alt="Lottery ball.">
+      <img id="lott-ball-3" class="lott-balls" src="./assets/images/lottery-balls/4@2x.webp" alt="Lottery ball.">
+      <img id="lott-ball-4" class="lott-balls" src="./assets/images/lottery-balls/6@2x.webp" alt="Lottery ball.">
+      <img id="lott-ball-5" class="lott-balls infos-blurry-img" src="./assets/images/lottery-balls/9@2x.webp" alt="Lottery ball.">
+      
+      <img id="pred-card-1" class="pred-cards" src="./assets/images/prediction-cards/green@2x.webp" alt="Prediction card.">
+      <img id="pred-card-2" class="pred-cards" src="./assets/images/prediction-cards/red@2x.webp" alt="Prediction card.">
+      <img id="pred-card-3" class="pred-cards" src="./assets/images/prediction-cards/bottom-left@2x.webp" alt="Prediction card.">
+      <img id="pred-card-4" class="pred-cards infos-blurry-img" src="./assets/images/prediction-cards/top-right@2x.webp" alt="Prediction card.">
+      
+      <div>
+        <div>
+
+            <div id="infos-2-title">
+              <h2><span id="infos-2-win">Win</span> millions in prices</h2>
+              <div id="infos-2-subtitle">
+                <p>Provably fair, on-chain games.</p>
+                <p>Win big with PancakeSwap.</p>
+              </div>
+            </div>
+
+          <div id="infos-cards-flex">
+
+            <div class="price-box" id="prediction-container">
+              <img src="./assets/icons/prediction.svg" alt="A crystal ball icon.">
+              <h3>Prediction</h3>
+              <span class="price">$900 million</span>
+              <span class="price-description">in BNB + CAKE won so far</span>
+              <p>Predict the price trend of BNB or CAKE to win</p>
+              <button>
+                Play
+                <img src="./assets/icons/infos-3-right-arrow.svg" alt="right arrow">
+              </button>
+            </div> 
+
+            <div class="price-box" id="lottery-container">
+              <img src="./assets/icons/lottery.svg" alt="A lottery ticket icon.">
+              <h3>Lottery</h3>
+              <span class="price">$119,641</span>
+              <span id="lottery-description" class="price-description">in CAKE prizes this round</span>
+              <p>Buy tickets with CAKE, win CAKE if your numbers match</p>
+              <button>
+                Buy Tickets
+                <img src="./assets/icons/infos-3-right-arrow.svg" alt="Right arrow.">
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="cards-3" class="cards">
+      <div class="cards-text">
+        <h2 class="cards-h2"> <span class="blue-text">CAKE</span> makes our world go round.</h2>
+        <p>Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.</p>
+        <div class="cards-links">
+          <button class="trade">Buy Cake</button>
+          <a class="learn-link" href="#">Learn</a>
+        </div>
+      </div>
+      <div id="cards-images" class="cards-image-right cards-images-3">
+        <div class="img-1">
+          <img id="cards-img-7" src="./assets/images/cards-images/bottom-right@2x.webp" alt="bottom right">
+        </div>
+        <div class="img-2" class="cards-image-right img-2">
+          <img id="cards-img-8" src="./assets/images/cards-images/top-right@2x.webp" alt="top right pancake">
+        </div>
+        <div class="img-3">
+          <img id="cards-img-9" src="./assets/images/cards-images/coin@2x.webp" alt="coin">
+        </div>
+        <div class="img-4">
+          <img id="cards-img-10" src="./assets/images/cards-images/top-left@2x.webp" alt="top left pancake">
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="infos-3">
+      <div>
+        <div>
+
+          <div class="infos-3-data-box">
+            <h4>Circulating Supply</h4>
+            <p>143,949,654</p>
+          </div>
+
+          <div class="infos-3-data-box">
+            <h4>Total supply</h4>
+            <p>337,653,324</p>
+          </div>
+
+          <div class="infos-3-data-box">
+            <h4>Max Supply</h4>
+            <p>750,000,000</p>
+          </div>
+          
+          <div class="infos-3-data-box">
+            <h4>Market cap</h4>
+            <p>$650 million</p>
+          </div>
+
+          <div class="infos-3-data-box">
+            <h4>Burned to date</h4>
+            <p>619,539,028</p>
+          </div>
+          
+          
+          <div class="infos-3-data-box">
+            <h4>Current emissions</h4>
+            <p>11.16/block</p>
+          </div>     
+
+        </div>
+      </div>
+    </section>
+    <section id="sign-up">
+      <div id="signup-pancakes-1">
+        <img class="signup-pancake" src="./assets/images/signup-images/1-bottom@2x.webp" alt="Pancake bottom.">
+        <img class="signup-pancake"src="./assets/images/signup-images/1-left@2x.webp" alt="Pancake left.">
+        <img class="signup-pancake" src="./assets/images/signup-images/1-top@2x.webp" alt="Pancake top.">
+      </div>
+        <div>
+          <h2>
+            Start in seconds.
+          </h2>
+          <p>
+            Connect your crypto wallet to start using the app in seconds.
+            <span>
+              No registration needed.
+            </span>
+          </p>
+          <a href="#">Learn how to start</a>
+          <button>Connect Wallet</button>
+        </div>
+        <div id="signup-pancakes-2">
+          <img class="signup-pancake" src="./assets/images/signup-images/2-bottom@2x.webp" alt="Pancake bottom.">
+          <img class="signup-pancake" src="./assets/images/signup-images/2-right@2x.webp" alt="Pancake right.">
+          <img class="signup-pancake" src="./assets/images/signup-images/2-top@2x.webp" alt="Pancake top.">
+        </div>
+    </section>
+    <section id="footer">
+      <div>
+        <ul>
+          <li>
+            <p>About</p>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Brand</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Litepaper</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Help</p>
+          </li>
+          <li>
+            <a href="#">Customer Support</a>
+          </li>
+          <li>
+            <a href="#">Troubleshooting</a>
+          </li>
+          <li>
+            <a href="#">Guides</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Developers</p>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+          <li>
+            <a href="#">Documentation</a>
+          </li>
+          <li>
+            <a href="#">Bug Bounty</a>
+          </li>
+          <li>
+            <a href="#">Audits</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+        <img id="footer-logo" src="./assets/icons/footer-logo.svg" alt="">
+        <div id="social-media">
+          <ul>
+            <li>
+              <a href="https://twitter.com/pancakeswap">
+                <img src="./assets/icons/twitter.svg" alt="Follow us on twitter.">
+              </a>
+            </li>
+            <li id="telegram">
+              <!--<a id="telegram" href="#">-->
+                <ul id="telegram-submenu">
+                  <li>
+                    <a href="https://t.me/pancakeswap">
+                      English
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapIndonesia">
+                      Bahasa Indonesia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwap_CN">
+                      中文
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapVN">
+                      Tiếng Việt
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pancakeswap_ita">
+                      Italiano
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pancakeswap_ru">
+                      русский
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pancakeswapturkiye">
+                      Türkiye
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapPortuguese">
+                      Português
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeswapEs">
+                      Español
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pancakeswapjp">
+                      日本語
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/pancakeswapfr">
+                      Français
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwap_DE">
+                      Deutsch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/Pancakeswap_Ph">
+                      Filipino
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapGeorgia">
+                      ქართული ენა
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapINDIA">
+                      हिन्दी
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/PancakeSwapAnn">
+                      Announcements
+                    </a>
+                  </li>
+                </ul>
+                <img src="./assets/icons/telegram.svg">
+              <!--</a>-->
+            </li>
+            <li>
+              <a href="https://reddit.com/r/pancakeswap">
+                <img src="./assets/icons/redit.svg" alt="Follow our subredit.">
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/pancakeswap_official">
+                <img src="./assets/icons/instagram.svg" alt="Follow us on instagram">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/pancakeswap/">
+                <img src="./assets/icons/github.svg" alt="Check out our open source contributions.">
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/pancakeswap">
+                <img src="./assets/icons/discord.svg" alt="Join our discord server.">
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/pancakeswap">
+                <img src="./assets/icons/medium.svg" alt="Find an interesting reading on our medium blog.">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="footer-bottom">
+      <div id="checkbox-container">
+        <div id="theme-checkbox">
+          <img src="./assets/icons/footer-btn-sun-bg.svg" alt="">
+          <img src="./assets/icons/footer-btn-moon-bg.svg" alt="">
+          <input type="checkbox" name="theme" value="1" id="theme-selection">
+          <label for="theme-selection">
+            <img id="f-theme-icon" src="./assets/icons/theme-btn-sun.svg" alt="">
+          </label>  
+        </div>
+        <div id="footer-lang">
+          <!--
+            <img src="./assets/icons/world.svg" alt="">
+          -->
+          <div id="lang-icons-wrapper">
+            <ul id="footer-langs">
+              <button value="AR">
+                العربية
+              </button>
+              <button value="BN">
+                বাংলা
+              </button>
+              <button value="EN">
+                English
+              </button>
+              <button value="DE">
+                Deutsch
+              </button>
+              <button value="EL">
+                Ελληνικά
+              </button>
+              <button value="ES-ES">
+                Español
+              </button>
+              <button value="FI">
+                Suomalainen
+              </button>
+              <button value="FIL">
+                Filipino
+              </button>
+              <button value="FR">
+                Français
+              </button>
+              <button value="HI">
+                हिंदी
+              </button>
+              <button value="HU">
+                Magyar
+              </button>
+              <button value="ID">
+                Bahasa Indonesia
+              </button>
+              <button value="IT">
+                Italiano
+              </button>
+              <button value="JA">
+                日本語
+              </button>
+              <button value="KO">
+                한국어
+              </button>
+              <button value="NL">
+                Nederlands
+              </button>
+              <button value="PL">
+                Polski
+              </button>
+              <button value="PT-BR">
+                Português (Brazil)
+              </button>
+              <button value="PT-PT">
+                Português
+              </button>
+              <button value="RO">
+                Română
+              </button>
+              <button value="RU">
+                Русский
+              </button>
+              <button value="SV">
+                Svenska
+              </button>
+              <button value="TA">
+                தமிழ்
+              </button>
+              <button value="TR">
+                Türkçe
+              </button>
+              <button value="UK">
+                Українська
+              </button>
+              <button value="VI">
+                Tiếng Việt
+              </button>
+              <button value="ZH-CN">
+                简体中文
+              </button>
+              <button value="ZH-TW">
+                繁體中文
+              </button>
+            </ul>
+            <svg viewBox="0 0 24 24" color="textSubtle" width="24px" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 
+                8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 
+                8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 
+                11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 
+                5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 
+                16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 
+                10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 
+                16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 
+                10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z">
+              </path>
+            </svg>
+            <p>EN</p>
+          </div>
+        </div>
+        <div id="footer-right">
+          <div>
+            <img src="./Full Logo/icon-round-512.png" alt="">
+            <p>$4.003</p>
+          </div>
+          <button>
+            <p>Buy CAKE</p>
+            <img src="./assets/icons/header-btn-right-arrow.svg" alt="Right arrow.">
+          </button>
+        </div>
+      </div>
+    </section>
+
+      <button id="fab">
+        <div>
+          <img src="./assets/icons/fab-up-arrow.svg" alt="Go back to the top.">
+        </div>
+      </button>
+
+    <script src="./scripts/phishing-warning.js"></script>
+    <script src="./scripts/hideElementsOnScroll.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/infos.js"></script>
+    <script src="./scripts/fab.js"></script>
+    <script src="./scripts/footer.js"></script>
+</body>
+</html>
