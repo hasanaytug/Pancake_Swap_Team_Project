@@ -5,6 +5,21 @@ const monthButton = document.querySelector(".month");
 const weekButton = document.querySelector(".week");
 const dayButton = document.querySelector(".day");
 const switchButton = document.querySelector(".switch-btn");
+const switchButton2 = document.querySelector(".switch-button");
+const coin1 = document.querySelector(".coin1");
+const coin2 = document.querySelector(".coin2");
+const coinIcon1 = document.querySelector("#coin-icon-1");
+const coinIcon2 = document.querySelector("#coin-icon-2");
+const rateCoinNames = document.querySelector(".rate-coin-names");
+const firstCoinInput = document.querySelector("#first-coin-input");
+const secondCoinInput = document.querySelector("#second-coin-input");
+const calcFirstCoinName = document.querySelector(".first-coin-name");
+const calcSecondCoinName = document.querySelector(".second-coin-name");
+const graphToggle = document.querySelector(".graph-toggle");
+const graph = document.querySelector(".graph");
+const calculator = document.querySelector(".calculator");
+
+let isGraphVisible = true;
 let switchToggle = false;
 
 //Graph creation
@@ -225,8 +240,7 @@ let dataWeek = dataYear.slice(-7);
 
 let dataMonth = dataYear.slice(-31);
 
-switchButton.addEventListener("click", (e) => {
-  e.preventDefault;
+function switchCoins() {
   dataWeek = switchExchangeRates(dataWeek);
   dataMonth = switchExchangeRates(dataMonth);
   dataDay = switchExchangeRates(dataDay);
@@ -244,10 +258,35 @@ switchButton.addEventListener("click", (e) => {
   if (yearButton.classList.contains("clicked")) {
     areaSeries.setData(dataYear);
   }
+  const coinText = coin1.innerText;
+  coin1.innerText = coin2.innerText;
+  coin2.innerText = coinText;
 
-  console.log(areaSeries.topColor);
+  const coinIcon1Path = coinIcon1.src.split("/");
+  const coinIcon2Path = coinIcon2.src.split("/");
+  const coinTemp = coinIcon1.src;
+  coinIcon1.src = coinIcon2.src;
+  coinIcon2.src = coinTemp;
+
+  const rateName1 = rateCoinNames.innerText.split("/")[0];
+  const rateName2 = rateCoinNames.innerText.split("/")[1];
+
+  rateCoinNames.innerText = `${rateName2}/${rateName1}`;
+
+  const CalcFirstCoinHtml = calcFirstCoinName.innerHTML;
+  calcFirstCoinName.innerHTML = calcSecondCoinName.innerHTML;
+  calcSecondCoinName.innerHTML = CalcFirstCoinHtml;
+}
+
+switchButton.addEventListener("click", (e) => {
+  e.preventDefault;
+  switchCoins();
 });
 
+switchButton2.addEventListener("click", (e) => {
+  e.preventDefault;
+  switchCoins();
+});
 //initial setting data for the graph
 
 areaSeries.setData(dataYear);
@@ -336,4 +375,22 @@ chart.subscribeCrosshairMove((param) => {
   } else {
     firstRow.innerText = "ETC USD 7D VWAP";
   }
+});
+
+firstCoinInput.addEventListener("change", (e) => {
+  e.preventDefault();
+  secondCoinInput.value =
+    Number(firstCoinInput.value) * dataYear[dataYear.length - 1].value;
+});
+
+graphToggle.addEventListener("click", (e) => {
+  if (isGraphVisible) {
+    graph.style.display = "none";
+    calculator.style.margin = "0 auto";
+    graphToggle.innerHTML = '<i class="fa-thin fa-chart-simple"></i>';
+  } else {
+    graph.style.display = "block";
+    graphToggle.innerHTML = '<i class="fa-solid fa-chart-simple"></i>';
+  }
+  isGraphVisible = !isGraphVisible;
 });

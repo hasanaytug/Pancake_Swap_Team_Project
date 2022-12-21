@@ -4,35 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/css/all.min.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
-    />
-    <link
-      rel="icon"
-      type="image/x-icom"
-      href="https://www.pngall.com/wp-content/uploads/10/PancakeSwap-Crypto-Logo-PNG.png"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="swap.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>PanckakeSwap Project</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="./pools.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="icon" type="image/x-icom" href="https://www.pngall.com/wp-content/uploads/10/PancakeSwap-Crypto-Logo-PNG.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>PancakeSwap - $4.047</title>
   </head>
+
   <body>
     <section id="phishing-warning">
       <img id="phishing-bunny" src="./assets/images/phishing-warning/phishing-warning-bunny.webp" 
@@ -51,7 +39,7 @@
     <nav class="navbar">
       <section class="nav-left">
         <ul> 
-          <li class="logo"><a href="../Develhope-Team2-Pancakeswap-Project-feature-homepage/home.html"><img src="./Full Logo/color-black.svg" alt=""></a></li>
+          <li class="logo"><a href="#"><img src="./Full Logo/color-black.svg" alt=""></a></li>
           <div class="item-wrapper">
             <li class="item trade">
               <a href="#">Trade</a>
@@ -71,7 +59,7 @@
               <div class="submenu1 subm2">
                 <ul>
                   <li><a href="#">Farms</li></a>
-                  <li><a href="../Develhope-Team2-Pancakeswap-Project-feature-pools-page/pools.html">Pools</li></a>
+                  <li><a href="#">Pools</li></a>
                 </ul>
               </div>
             </li>
@@ -263,142 +251,272 @@
       </ul>
   </div>
     </nav>
-    <header class="trade-nav">
-      <div class="tradeNav-item">
-        <a href="../Develhope-Team2-Pancakeswap-Project-feature-swap/swap.html">Swap</a>
-        <a href="#">Limit</a>
-        <a href="../Develhope-Team2-Pancakeswap-Project-feature-liquidity/liquidity.html">Liquidity</a>
-        <a href="#">Perpertual</a>
-        <a href="#">Bridge</a>
-      </div>
-    </header>
-    <section class="main">
-      <div class="graph">
-        <div class="top">
-          <div class="top-left">
-            <img
-              id="coin-icon-1"
-              src="assets/binance-coin-bnb-icon.svg"
-              alt="coin-1-logo"
-              height="20px"
-              width="20px"
-            />
-            <img
-            id="coin-icon-2"
-              src="assets/pancakeswap-cake-logo.svg"
-              alt="coin-2-logo"
-              height="20px"
-              width="20px"
-            />
-            <p>
-              <span class="coin1">BNB</span>/<span class="coin2">CAKE</span>
-            </p>
-            <button class="switch-btn">
-              <i class="fa-solid fa-sm fa-repeat"></i>
-            </button>
-          </div>
-          <div class="top-right">
-            <button><i class="fa-solid fa-expand"></i></button>
-          </div>
-        </div>
-        <div class="middle">
-          <div class="middle-left">
-            <p>
-              <span class="coin-rate">77.43</span>
-              <span class="rate-coin-names">BNB/CAKE</span> <span
-                class="coin-difference"
-                >-2.022(%2.43)</span
-              >
-            </p>
-          </div>
-          <div class="middle-right">
-            <button class="btn day">24h</button>
-            <button class="btn week">1w</button>
-            <button class="btn month">1m</button>
-            <button class="btn clicked year">1y</button>
-          </div>
-        </div>
-        <div id="tvchart"></div>
-      </div>
-      <div class="calculator">
-        <div class="calc-top">
-          <div class="calc-title">
-            <p class="swap-title">Swap</p>
-          </div>
-          <p class="calc-info">Trade tokens in an instant</p>
-          <div class="right-buttons">
-            <button class="graph-toggle">
-              <i class="fa-solid fa-chart-simple"></i>
-            </button>
-            <button class="settings">
-              <i class="fa fa-cog" aria-hidden="true"></i>
-            </button>
-            <button class="recent-swaps">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-            <button class="refresh">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-          </div>
-        </div>
-        <hr />
-        <div class="calc-mid">
-          <div class="first-coin">
-            <button class="first-coin-name calc-coins">
-              <img
-                id="coin-icon-1"
-                src="assets/binance-coin-bnb-icon.svg"
-                alt="coin-1-logo"
-                height="20px"
-                width="20px"
-              />BNB
-            </button>
-            <form action="" method="get" class="first-coin-form">
+    <!-- Pools Section Start -->
+
+    <!-- Head -->
+    <div class="ibrahim-pool-head debug">
+      <div class="ibrahim-pool-head-text1">Syrup Pools</div>
+      <div class="ibrahim-pool-head-text2">Just stake some tokens to earn.</div>
+      <div class="ibrahim-pool-head-text3">High APR, low risk.</div>
+    </div>
+    <!-- Middle -->
+    <div class="ibrahim-pool-middle debug">
+      <div class="ibrahim-pool-middle-head white-preview debug">
+        <div class="ibrahim-pool-middle-head-left debug">
+          <span class="material-icons debug"> view_module </span>
+          <span class="material-icons icon-color debug"> view_list </span>
+          <!-- <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+          </label><br><br>
+          
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label> -->
+
+          <label class="switch debug">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+          <label class="debug" for="">Staked Only</label>
+
+          <div class="btn-container debug">
+            <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
+            <label class="switch btn-color-mode-switch debug">
               <input
-                id="first-coin-input"
-                class="inputs"
-                type="text"
-                placeholder="0.0"
+                type="checkbox"
+                name="color_mode"
+                id="color_mode"
+                value="1"
               />
-            </form>
-          </div>
-          <div class="switch">
-            <button class="switch-button">
-              <i class="fa-solid fa-sm fa-repeat"></i>
-            </button>
-          </div>
-          <div class="second-coin">
-            <button class="second-coin-name calc-coins">
-              <img
-                src="assets/pancakeswap-cake-logo.svg"
-                alt="coin-2-logo"
-                height="20px"
-                width="20px"
-              />CAKE
-            </button>
-            <form action="" method="get" class="second-coin-form">
-              <input
-                id="second-coin-input"
-                class="inputs"
-                type="text"
-                placeholder="0.0"
-              />
-            </form>
-          </div>
-          <div class="scan-risk">
-            <button class="scan"></button>
-            <button class="question-mark"></button>
-          </div>
-          <div class="slippage">
-            <p>Slippage Tolerance</p>
-            <p>0.5%</p>
-          </div>
-          <div class="connect">
-            <button class="connect-wallet">Connect Wallet</button>
+              <label
+                for="color_mode"
+                data-on="Finished"
+                data-off="Live"
+                class="btn-color-mode-switch-inner"
+              ></label>
+            </label>
+            <!-- <i class="fa fa-moon-o" aria-hidden="true"></i> -->
           </div>
         </div>
+
+        <div class="ibrahim-pool-middle-head-right debug">
+          <select id="country" name="country" class="debug">
+            <option value="hot">Hot</option>
+            <option value="apr">APR</option>
+            <option value="earned">Earned</option>
+            <option value="tstaked">Total Staked</option>
+            <option value="latest">Latest</option>
+          </select>
+
+          <form
+            class="example"
+            action="/action_page.php"
+            style="margin: auto; max-width: 300px"
+          >
+            <input type="text" placeholder="Search Pools" name="search2" />
+          </form>
+        </div>
       </div>
-    </section>
+      <div class="ibrahim-pool-middle-middle debug">
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+        <div class="debug">
+          <ul class="debug">
+            <!-- <li class="debug">Icons Here</li> -->
+            <!-- <div class="debug"> -->
+            <li class="debug" style="font-size: 16px; color: #280d5f">
+              Stake CAKE
+            </li>
+            <!-- <li class="debug" style="font-size: 12px;">Stake, Earn – And more!</li> -->
+            <!-- </div> -->
+            <li class="debug" style="font-size: 12px">CAKE Staked</li>
+            <!-- <li class="debug" style="font-size: 12px;">0.0</li> -->
+            <!-- <li class="debug" style="font-size: 12px;">0 USD</li> -->
+            <li class="debug">Flexible APY</li>
+            <!-- <li class="debug">2.78%</li> -->
+            <li>Locked APY</li>
+            <!-- <li>Up to 59.62%</li> -->
+            <li>Total staked</li>
+            <!-- <li>240,778,712 CAKE</li> -->
+            <li>Details</li>
+            <!-- <li>Some Icon Here if we have time</li> -->
+          </ul>
+        </div>
+
+        <!-- <table id="myTable" class="debug">
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+          </tr>
+          <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+          </tr>
+        </table> -->
+      </div>
+      <div class="ibrahim-pool-middle-foot debug">
+        <img
+          src="../assets/images/pools-images/3d-syrup-bunnies.png"
+          alt=""
+          style="width: 200px"
+        />
+      </div>
+    </div>
     <section id="footer">
       <div>
         <ul>
@@ -722,7 +840,10 @@
     <script src="./scripts/fab.js"></script>
     <script src="./scripts/footer.js"></script>
 
-    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="./swap.js"></script>
+    <!-- Pools Section End -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="script.js"></script> -->
   </body>
 </html>

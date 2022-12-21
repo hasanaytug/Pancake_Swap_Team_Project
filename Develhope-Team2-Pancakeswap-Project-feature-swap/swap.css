@@ -121,6 +121,7 @@ hr {
 
 .inputs {
   margin-top: 5px;
+  padding-right: 20px;
   height: 50px;
   width: 250px;
   text-align: end;
